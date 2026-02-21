@@ -19,7 +19,7 @@ export default function HeroSection() {
     return (
         <section
             id="home"
-            className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-brand-cream via-white to-brand-cream dark:from-dark-bg dark:via-dark-surface dark:to-dark-bg"
+            className="relative flex items-center overflow-hidden bg-gradient-to-br from-brand-cream via-white to-brand-cream dark:from-dark-bg dark:via-dark-surface dark:to-dark-bg"
         >
             {/* ----- Decorative liquid blobs ----- */}
             <div className="blob-animate pointer-events-none absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-brand-yellow/25 blur-3xl dark:bg-brand-yellow/10" />
@@ -49,7 +49,7 @@ export default function HeroSection() {
             ))}
 
             {/* ===== TWO-COLUMN LAYOUT ===== */}
-            <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-5 py-32 lg:grid-cols-2 lg:px-8">
+            <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-5 pt-32 pb-12 lg:grid-cols-2 lg:px-8">
                 {/* ----- LEFT: Text Content ----- */}
                 <div>
                     {/* Badge — liquid glass pill */}
