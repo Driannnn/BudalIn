@@ -33,7 +33,7 @@ export default function Navbar() {
             initial={{ y: -80 }}
             animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || mobileOpen
                 ? "bg-white/85 shadow-lg backdrop-blur-xl border-b border-white/30 dark:bg-dark-bg/85 dark:border-white/10 dark:shadow-black/30"
                 : "bg-transparent"
                 }`}
