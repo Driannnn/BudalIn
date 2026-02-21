@@ -19,12 +19,12 @@ export default function HeroSection() {
     return (
         <section
             id="home"
-            className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-brand-cream via-white to-brand-cream"
+            className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-brand-cream via-white to-brand-cream dark:from-dark-bg dark:via-dark-surface dark:to-dark-bg"
         >
             {/* ----- Decorative liquid blobs ----- */}
-            <div className="blob-animate pointer-events-none absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-brand-yellow/25 blur-3xl" />
-            <div className="blob-animate-slow pointer-events-none absolute -bottom-40 -right-32 h-[600px] w-[600px] rounded-full bg-brand-orange/20 blur-3xl" />
-            <div className="blob-animate pointer-events-none absolute top-1/3 right-1/4 h-72 w-72 rounded-full bg-brand-orange/10 blur-2xl" />
+            <div className="blob-animate pointer-events-none absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-brand-yellow/25 blur-3xl dark:bg-brand-yellow/10" />
+            <div className="blob-animate-slow pointer-events-none absolute -bottom-40 -right-32 h-[600px] w-[600px] rounded-full bg-brand-orange/20 blur-3xl dark:bg-brand-orange/10" />
+            <div className="blob-animate pointer-events-none absolute top-1/3 right-1/4 h-72 w-72 rounded-full bg-brand-orange/10 blur-2xl dark:bg-brand-orange/5" />
 
             {/* ----- Glass orbs decoration ----- */}
             <div className="pointer-events-none absolute top-20 right-[15%] hidden h-40 w-40 rounded-full liquid-glass opacity-40 lg:block" />
@@ -34,7 +34,7 @@ export default function HeroSection() {
             {floatingIcons.map(({ Icon, x, y, delay }, i) => (
                 <motion.div
                     key={i}
-                    className="pointer-events-none absolute hidden text-brand-orange/10 lg:block"
+                    className="pointer-events-none absolute hidden text-brand-orange/10 lg:block dark:text-brand-orange/8"
                     style={{ left: x, top: y }}
                     animate={{ y: [0, -18, 0] }}
                     transition={{
@@ -70,7 +70,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.8, delay: 0.1 }}
                         className="mb-4"
                     >
-                        <h1 className="text-[5rem] leading-none font-black tracking-tighter text-brand-navy sm:text-[8rem] md:text-[10rem] lg:text-[9rem] xl:text-[11rem]">
+                        <h1 className="text-[5rem] leading-none font-black tracking-tighter text-brand-navy dark:text-white sm:text-[8rem] md:text-[10rem] lg:text-[9rem] xl:text-[11rem]">
                             Budal
                             <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">
                                 In
@@ -83,7 +83,7 @@ export default function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.25 }}
-                        className="font-[var(--font-accent)] text-2xl font-semibold text-brand-navy-light/80 sm:text-3xl lg:text-4xl"
+                        className="font-[var(--font-accent)] text-2xl font-semibold text-brand-navy-light/80 dark:text-white/60 sm:text-3xl lg:text-4xl"
                     >
                         &ldquo;Sampeyan mager, kulo sing muter&rdquo;
                     </motion.p>
@@ -93,12 +93,12 @@ export default function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.35 }}
-                        className="mt-6 max-w-xl text-base leading-relaxed text-brand-navy-light/70 sm:text-lg"
+                        className="mt-6 max-w-xl text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50 sm:text-lg"
                     >
                         Layanan{" "}
-                        <strong className="text-brand-navy">jasa titip beli &amp; pengantaran</strong>{" "}
+                        <strong className="text-brand-navy dark:text-white">jasa titip beli &amp; pengantaran</strong>{" "}
                         untuk mahasiswa dan warga di sekitar{" "}
-                        <strong className="text-brand-navy">UNESA Kampus 5 Magetan</strong>.
+                        <strong className="text-brand-navy dark:text-white">UNESA Kampus 5 Magetan</strong>.
                         Apapun semua berangkat — cukup pesan, kami yang jalan! 🏍️
                     </motion.p>
 
@@ -120,7 +120,7 @@ export default function HeroSection() {
                         </a>
                         <a
                             href="#katalog"
-                            className="liquid-glass inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-bold uppercase tracking-wide text-brand-navy transition-all hover:bg-white/30"
+                            className="liquid-glass inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-bold uppercase tracking-wide text-brand-navy transition-all hover:bg-white/30 dark:text-white dark:hover:bg-white/10"
                         >
                             Lihat Katalog
                         </a>
@@ -145,7 +145,7 @@ export default function HeroSection() {
                                 <p className="text-2xl font-black text-brand-orange sm:text-3xl">
                                     {stat.value}
                                 </p>
-                                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-muted sm:text-sm">
+                                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-muted dark:text-white/40 sm:text-sm">
                                     {stat.label}
                                 </p>
                             </div>
@@ -161,7 +161,7 @@ export default function HeroSection() {
                     className="relative flex items-center justify-center"
                 >
                     {/* Glow behind mascot */}
-                    <div className="absolute inset-0 m-auto h-[70%] w-[70%] rounded-full bg-gradient-to-br from-brand-orange/20 to-brand-yellow/20 blur-3xl" />
+                    <div className="absolute inset-0 m-auto h-[70%] w-[70%] rounded-full bg-gradient-to-br from-brand-orange/20 to-brand-yellow/20 blur-3xl dark:from-brand-orange/15 dark:to-brand-yellow/10" />
 
                     {/* Mascot image */}
                     <Image

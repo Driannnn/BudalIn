@@ -63,10 +63,10 @@ const waLink = (text: string) =>
 
 export default function CatalogSection() {
     return (
-        <section id="katalog" className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-brand-cream/50 to-brand-gray/30">
+        <section id="katalog" className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-brand-cream/50 to-brand-gray/30 dark:from-dark-surface/50 dark:to-dark-bg/80">
             {/* Decorative liquid blobs */}
             <div className="blob-animate pointer-events-none absolute top-20 -right-40 h-96 w-96 rounded-full bg-brand-orange/8 blur-3xl" />
-            <div className="blob-animate-slow pointer-events-none absolute bottom-20 -left-40 h-80 w-80 rounded-full bg-brand-yellow/10 blur-3xl" />
+            <div className="blob-animate-slow pointer-events-none absolute bottom-20 -left-40 h-80 w-80 rounded-full bg-brand-yellow/10 blur-3xl dark:bg-brand-yellow/5" />
 
             {/* subtle top gradient line */}
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-orange/30 to-transparent" />
@@ -83,11 +83,11 @@ export default function CatalogSection() {
                     <span className="liquid-glass mb-4 inline-block rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest text-brand-orange">
                         Katalog
                     </span>
-                    <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy sm:text-4xl lg:text-5xl">
+                    <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy dark:text-white sm:text-4xl lg:text-5xl">
                         Produk &amp; Jasa{" "}
                         <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">Jastip</span>
                     </h2>
-                    <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70">
+                    <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
                         Pilih produk jualan teman-teman mahasiswa di bawah ini, lalu klik
                         &ldquo;Titip Beli&rdquo; untuk langsung terhubung via WhatsApp.
                     </p>
@@ -105,20 +105,20 @@ export default function CatalogSection() {
                             className="liquid-glass-card group flex flex-col overflow-hidden rounded-2xl"
                         >
                             {/* Emoji placeholder image area */}
-                            <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-cream/80 to-white/60">
+                            <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-cream/80 to-white/60 dark:from-dark-surface dark:to-dark-bg/60">
                                 <span className="text-7xl transition-transform group-hover:scale-110">
                                     {product.emoji}
                                 </span>
                                 {/* Glass overlay shimmer */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent dark:from-dark-surface/60 dark:to-transparent" />
                             </div>
 
                             {/* Card body */}
                             <div className="flex flex-1 flex-col p-6">
-                                <h3 className="text-lg font-bold text-brand-navy">
+                                <h3 className="text-lg font-bold text-brand-navy dark:text-white">
                                     {product.name}
                                 </h3>
-                                <p className="mt-1 flex-1 text-sm text-brand-navy-light/70">
+                                <p className="mt-1 flex-1 text-sm text-brand-navy-light/70 dark:text-white/50">
                                     {product.desc}
                                 </p>
 

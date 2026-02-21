@@ -10,7 +10,7 @@ const IG_LINK = "https://instagram.com/budalin.official";
 
 export default function Footer() {
     return (
-        <footer className="relative bg-brand-navy text-white overflow-hidden">
+        <footer className="relative bg-brand-navy dark:bg-dark-bg text-white overflow-hidden">
             {/* Top gradient border */}
             <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-orange via-brand-yellow to-brand-orange" />
 

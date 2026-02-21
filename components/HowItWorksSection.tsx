@@ -27,7 +27,7 @@ const steps = [
 
 export default function HowItWorksSection() {
     return (
-        <section id="cara-kerja" className="relative bg-gradient-to-b from-white to-brand-cream/30 py-24 lg:py-32 overflow-hidden">
+        <section id="cara-kerja" className="relative bg-gradient-to-b from-white to-brand-cream/30 dark:from-dark-bg dark:to-dark-surface/30 py-24 lg:py-32 overflow-hidden">
             {/* Decorative blobs */}
             <div className="blob-animate pointer-events-none absolute top-10 left-[10%] h-64 w-64 rounded-full bg-brand-yellow/8 blur-3xl" />
             <div className="blob-animate-slow pointer-events-none absolute bottom-10 right-[10%] h-72 w-72 rounded-full bg-brand-orange/8 blur-3xl" />
@@ -44,11 +44,11 @@ export default function HowItWorksSection() {
                     <span className="liquid-glass mb-4 inline-block rounded-full px-5 py-2 text-xs font-bold uppercase tracking-widest text-brand-orange">
                         Cara Kerja
                     </span>
-                    <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy sm:text-4xl lg:text-5xl">
+                    <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy dark:text-white sm:text-4xl lg:text-5xl">
                         Semudah{" "}
                         <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">1-2-3</span>
                     </h2>
-                    <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70">
+                    <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
                         Tiga langkah simpel dan pesananmu langsung diproses.
                     </p>
                 </motion.div>
@@ -80,8 +80,8 @@ export default function HowItWorksSection() {
                                 </span>
                             </div>
 
-                            <h3 className="text-xl font-bold uppercase tracking-wide text-brand-navy">{title}</h3>
-                            <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-navy-light/70">
+                            <h3 className="text-xl font-bold uppercase tracking-wide text-brand-navy dark:text-white">{title}</h3>
+                            <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-navy-light/70 dark:text-white/50">
                                 {desc}
                             </p>
                         </motion.div>
