@@ -6,7 +6,7 @@ import { ArrowRight, Package, Bike, MapPin } from "lucide-react";
 
 /* ===== WhatsApp CTA link ===== */
 const WA_LINK =
-    "https://wa.me/6281234567890?text=Halo%20BudalIn%2C%20saya%20mau%20titip%20beli!";
+    "https://wa.me/6285645645407?text=Halo%20BudalIn%2C%20saya%20mau%20titip%20beli!";
 
 /* ===== Floating icons configuration (right side) ===== */
 const floatingIcons = [
