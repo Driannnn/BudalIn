@@ -60,7 +60,7 @@ export default function HeroSection() {
                         className="liquid-glass mb-6 inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold text-brand-orange"
                     >
                         <Bike className="h-4 w-4" />
-                        Jasa Titip &amp; Pengantaran — UNESA Kampus 5 Magetan
+                        Personal Asisten — UNESA Kampus 5 Magetan
                     </motion.div>
 
                     {/* MASSIVE "BudalIn" brand title */}
@@ -96,10 +96,10 @@ export default function HeroSection() {
                         className="mt-6 max-w-xl text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50 sm:text-lg"
                     >
                         Layanan{" "}
-                        <strong className="text-brand-navy dark:text-white">jasa titip beli &amp; pengantaran</strong>{" "}
+                        <strong className="text-brand-navy dark:text-white">jasa personal asisten, titip beli &amp; pengantaran</strong>{" "}
                         untuk mahasiswa dan warga di sekitar{" "}
                         <strong className="text-brand-navy dark:text-white">UNESA Kampus 5 Magetan</strong>.
-                        Apapun semua berangkat — cukup pesan, kami yang jalan! 🏍️
+                        Apapun semua berangkat cukup pesan, kami yang jalan! 🏍️
                     </motion.p>
 
                     {/* CTA Buttons */}

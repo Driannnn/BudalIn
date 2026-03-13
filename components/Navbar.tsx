@@ -14,7 +14,7 @@ const navLinks = [
 
 /* ===== WhatsApp CTA link ===== */
 const WA_LINK =
-    "https://wa.me/6281234567890?text=Halo%20BudalIn%2C%20saya%20mau%20pesan!";
+    "https://wa.me/6285645645407?text=Halo%20BudalIn%2C%20saya%20mau%20pesan!";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);

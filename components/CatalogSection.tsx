@@ -59,7 +59,7 @@ const products: Product[] = [
 
 /* ===== WhatsApp helper ===== */
 const waLink = (text: string) =>
-    `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+    `https://wa.me/6285645645407?text=${encodeURIComponent(text)}`;
 
 export default function CatalogSection() {
     return (

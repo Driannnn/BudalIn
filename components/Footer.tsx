@@ -5,7 +5,7 @@ import { Truck, Instagram, MessageCircle, MapPin } from "lucide-react";
 
 /* ===== Social links ===== */
 const WA_LINK =
-    "https://wa.me/6281234567890?text=Halo%20BudalIn!";
+    "https://wa.me/6285645645407?text=Halo%20BudalIn!";
 const IG_LINK = "https://instagram.com/budalin.official";
 
 export default function Footer() {
@@ -104,16 +104,6 @@ export default function Footer() {
                     </motion.div>
                 </div>
 
-                {/* Bottom bar — glass divider */}
-                <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
-                    <p className="text-xs text-white/30">
-                        &copy; {new Date().getFullYear()} BudalIn — Project Kewirausahaan
-                        UNESA Kampus 5 Magetan
-                    </p>
-                    <p className="text-xs text-white/30">
-                        Made with ❤️ by Mahasiswa UNESA
-                    </p>
-                </div>
             </div>
         </footer>
     );

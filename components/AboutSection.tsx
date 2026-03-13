@@ -46,7 +46,7 @@ export default function AboutSection() {
                     </h2>
                     <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
                         BudalIn adalah layanan <strong>&ldquo;apapun semua berangkat&rdquo;</strong>{" "}
-                        — jasa titip beli dan pengantaran yang lahir dari semangat kewirausahaan
+                        jasa personal asisten, titip beli dan pengantaran yang lahir dari semangat kewirausahaan
                         mahasiswa UNESA Kampus 5, Magetan.
                     </p>
                 </motion.div>
