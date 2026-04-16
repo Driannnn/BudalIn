@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Truck, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
+import Image from "next/image";
 
 /* ===== Navigation Links ===== */
 const navLinks = [
@@ -14,7 +15,7 @@ const navLinks = [
 
 /* ===== WhatsApp CTA link ===== */
 const WA_LINK =
-    "https://wa.me/6285645645407?text=Halo%20BudalIn%2C%20saya%20mau%20pesan!";
+    "https://wa.me/6285645645407?text=Halo%20WiriGoo%2C%20saya%20mau%20pesan!";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -41,11 +42,15 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
                 {/* ---------- Logo ---------- */}
                 <a href="#home" className="flex items-center gap-2 group">
-                    <div className="liquid-shimmer flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-orange to-brand-yellow shadow-md transition-transform group-hover:scale-110">
-                        <Truck className="h-5 w-5 text-white" />
-                    </div>
+                    <Image
+                        src="/Logo.png"
+                        alt="WiriGoo Logo"
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 rounded-xl shadow-md transition-transform group-hover:scale-110"
+                    />
                     <span className="text-xl font-extrabold tracking-tight text-brand-navy dark:text-white">
-                        Budal<span className="text-brand-orange">In</span>
+                        Wiri<span className="text-brand-orange">Goo</span>
                     </span>
                 </a>
 

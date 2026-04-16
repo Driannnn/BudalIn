@@ -6,7 +6,7 @@ import { ArrowRight, Package, Bike, MapPin } from "lucide-react";
 
 /* ===== WhatsApp CTA link ===== */
 const WA_LINK =
-    "https://wa.me/6285645645407?text=Halo%20BudalIn%2C%20saya%20mau%20titip%20beli!";
+    "https://wa.me/6285645645407?text=Halo%20WiriGoo%2C%20saya%20mau%20titip%20beli!";
 
 /* ===== Floating icons configuration (right side) ===== */
 const floatingIcons = [
@@ -60,10 +60,10 @@ export default function HeroSection() {
                         className="liquid-glass mb-6 inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold text-brand-orange"
                     >
                         <Bike className="h-4 w-4" />
-                        Personal Asisten — UNESA Kampus 5 Magetan
+                        Personal Asisten - UNESA Kampus 5 Magetan
                     </motion.div>
 
-                    {/* MASSIVE "BudalIn" brand title */}
+                    {/* MASSIVE "WiriGoo" brand title */}
                     <motion.div
                         initial={{ opacity: 0, x: -60 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -71,9 +71,9 @@ export default function HeroSection() {
                         className="mb-4"
                     >
                         <h1 className="text-[5rem] leading-none font-black tracking-tighter text-brand-navy dark:text-white sm:text-[8rem] md:text-[10rem] lg:text-[9rem] xl:text-[11rem]">
-                            Budal
+                            Wiri
                             <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">
-                                In
+                                Goo
                             </span>
                         </h1>
                     </motion.div>
@@ -83,9 +83,9 @@ export default function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.25 }}
-                        className="font-[var(--font-accent)] text-2xl font-semibold text-brand-navy-light/80 dark:text-white/60 sm:text-3xl lg:text-4xl"
+                        className="font-[var(--font-accent)] text-2x1 font-bold text-brand-navy-light/80 dark:text-white/60 sm:text-lg"
                     >
-                        &ldquo;Sampeyan mager, kulo sing muter&rdquo;
+                        &ldquo;Nggak Perlu Keluar, Biar WiriGoo yang Mengantar&rdquo;
                     </motion.p>
 
                     {/* Sub-headline */}
@@ -166,7 +166,7 @@ export default function HeroSection() {
                     {/* Mascot image */}
                     <Image
                         src="/maskot.png"
-                        alt="Maskot BudalIn"
+                        alt="Maskot WiriGoo"
                         width={600}
                         height={700}
                         priority

@@ -22,7 +22,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
 
     /* On mount: read localStorage → system pref → fallback to light */
     useEffect(() => {
-        const stored = localStorage.getItem("budalin-theme") as Theme | null;
+        const stored = localStorage.getItem("wirigoo-theme") as Theme | null;
         if (stored === "dark" || stored === "light") {
             setTheme(stored);
         } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -40,7 +40,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
         } else {
             root.classList.remove("dark");
         }
-        localStorage.setItem("budalin-theme", theme);
+        localStorage.setItem("wirigoo-theme", theme);
     }, [theme, mounted]);
 
     const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));

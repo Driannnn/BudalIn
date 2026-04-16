@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Truck, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { Instagram, MessageCircle, MapPin } from "lucide-react";
+import Image from "next/image";
 
 /* ===== Social links ===== */
 const WA_LINK =
-    "https://wa.me/6285645645407?text=Halo%20BudalIn!";
-const IG_LINK = "https://instagram.com/budalin.official";
+    "https://wa.me/6285645645407?text=Halo%20WiriGoo!";
+const IG_LINK = "https://instagram.com/wirigoo.official";
 
 export default function Footer() {
     return (
@@ -28,11 +29,15 @@ export default function Footer() {
                         transition={{ duration: 0.5 }}
                     >
                         <a href="#home" className="inline-flex items-center gap-2 group">
-                            <div className="liquid-shimmer flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-orange to-brand-yellow transition-transform group-hover:scale-110">
-                                <Truck className="h-5 w-5 text-white" />
-                            </div>
+                            <Image
+                                src="/Logo.png"
+                                alt="WiriGoo Logo"
+                                width={40}
+                                height={40}
+                                className="h-10 w-10 rounded-xl transition-transform group-hover:scale-110"
+                            />
                             <span className="text-xl font-extrabold tracking-tight">
-                                Budal<span className="text-brand-orange">In</span>
+                                Wiri<span className="text-brand-orange">Goo</span>
                             </span>
                         </a>
                         <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
@@ -97,7 +102,7 @@ export default function Footer() {
                                     className="inline-flex items-center gap-2 text-white/50 transition-colors hover:text-brand-orange"
                                 >
                                     <Instagram className="h-4 w-4" />
-                                    @budalin.official
+                                    @wirigoo.official
                                 </a>
                             </li>
                         </ul>

@@ -6,7 +6,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import Footer from "@/components/Footer";
 
 /**
- * BudalIn Landing Page
+ * WiriGoo Landing Page
  * --------------------
  * Semua section di-compose di sini secara berurutan.
  * Masing-masing section bersifat client component (karena Framer Motion),

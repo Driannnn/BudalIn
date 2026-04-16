@@ -9,19 +9,19 @@ const steps = [
         Icon: ClipboardList,
         step: "1",
         title: "Pilih Barang",
-        desc: "Pilih produk atau jasa yang kamu butuhkan dari katalog BudalIn.",
+        desc: "Pilih produk atau jasa yang kamu butuhkan dari katalog WiriGoo.",
     },
     {
         Icon: MessageCircle,
         step: "2",
-        title: "Hubungi BudalIn",
+        title: "Hubungi WiriGoo",
         desc: "Kirim pesanan via WhatsApp — konfirmasi detail dan ongkir.",
     },
     {
         Icon: PackageCheck,
         step: "3",
         title: "Barang Diantar",
-        desc: "Duduk manis, tim BudalIn yang berangkat dan antar ke tempatmu!",
+        desc: "Duduk manis, tim WiriGoo yang berangkat dan antar ke tempatmu!",
     },
 ];
 

@@ -2,12 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ShoppingBag } from "lucide-react";
+import Image from "next/image";
 
 /* ===== Product Data ===== */
 interface Product {
     name: string;
     price: string;
     emoji: string;
+    image?: string;
     desc: string;
     waText: string;
 }
@@ -18,42 +20,43 @@ const products: Product[] = [
         price: "Rp 12.000",
         emoji: "🌶️",
         desc: "Seblak pedas level dewa, favorit anak kampus!",
-        waText: "Halo BudalIn, saya mau titip beli Seblak Mang Ujang",
+        waText: "Halo WiriGoo, saya mau titip beli Seblak Mang Ujang",
     },
     {
         name: "Kopi Susu Senja",
         price: "Rp 15.000",
         emoji: "☕",
+        // image: "/belikopi.jpeg",
         desc: "Kopi susu kekinian dengan gula aren asli Magetan.",
-        waText: "Halo BudalIn, saya mau titip beli Kopi Susu Senja",
+        waText: "Halo WiriGoo, saya mau titip beli Kopi Susu Senja",
     },
     {
         name: "Jasa Print Tugas",
         price: "Rp 500/lbr",
         emoji: "🖨️",
         desc: "Print hitam-putih atau warna, antar ke kos kamu!",
-        waText: "Halo BudalIn, saya mau titip print tugas",
+        waText: "Halo WiriGoo, saya mau titip print tugas",
     },
     {
         name: "Nasi Goreng Bu Tin",
         price: "Rp 10.000",
         emoji: "🍳",
         desc: "Nasi goreng legendaris depan gerbang kampus 5.",
-        waText: "Halo BudalIn, saya mau titip beli Nasi Goreng Bu Tin",
+        waText: "Halo WiriGoo, saya mau titip beli Nasi Goreng Bu Tin",
     },
     {
         name: "Es Teh Jumbo",
         price: "Rp 5.000",
         emoji: "🧊",
         desc: "Es teh manis jumbo 600ml, penawar haus siang bolong.",
-        waText: "Halo BudalIn, saya mau titip beli Es Teh Jumbo",
+        waText: "Halo WiriGoo, saya mau titip beli Es Teh Jumbo",
     },
     {
         name: "Gorengan Pak De",
         price: "Rp 2.000/pcs",
         emoji: "🍩",
         desc: "Tahu isi, risol, bakwan — anget-anget dari wajan!",
-        waText: "Halo BudalIn, saya mau titip beli Gorengan Pak De",
+        waText: "Halo WiriGoo, saya mau titip beli Gorengan Pak De",
     },
 ];
 
@@ -104,11 +107,20 @@ export default function CatalogSection() {
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                             className="liquid-glass-card group flex flex-col overflow-hidden rounded-2xl"
                         >
-                            {/* Emoji placeholder image area */}
-                            <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-cream/80 to-white/60 dark:from-dark-surface dark:to-dark-bg/60">
-                                <span className="text-7xl transition-transform group-hover:scale-110">
-                                    {product.emoji}
-                                </span>
+                            {/* Product image area */}
+                            <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-cream/80 to-white/60 dark:from-dark-surface dark:to-dark-bg/60 overflow-hidden">
+                                {product.image ? (
+                                    <Image
+                                        src={product.image}
+                                        alt={product.name}
+                                        fill
+                                        className="object-cover transition-transform group-hover:scale-110"
+                                    />
+                                ) : (
+                                    <span className="text-7xl transition-transform group-hover:scale-110">
+                                        {product.emoji}
+                                    </span>
+                                )}
                                 {/* Glass overlay shimmer */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent dark:from-dark-surface/60 dark:to-transparent" />
                             </div>
