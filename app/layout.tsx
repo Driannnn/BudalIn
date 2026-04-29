@@ -20,7 +20,7 @@ const caveat = Caveat({
 
 /* ===== SEO Metadata ===== */
 export const metadata: Metadata = {
-  title: "WiriGoo — Sampeyan Mager, Kulo Sing Muter",
+  title: "WiriGoo — Nggak Perlu Keluar, Biar WiriGoo yang Mengantar",
   description:
     "Layanan jasa titip beli & pengantaran untuk mahasiswa UNESA Kampus 5 Magetan. Apapun semua berangkat!",
   keywords: [
