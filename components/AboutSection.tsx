@@ -33,7 +33,7 @@ const teamMembers = [
     },
     {
         name: "Ello Adrian Hariadi",
-        nim: "2505124257",
+        nim: "25051204257",
         photo: "/team/ello.png",
         role: "Anggota",
     },
