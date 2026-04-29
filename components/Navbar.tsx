@@ -9,6 +9,8 @@ import Image from "next/image";
 /* ===== Navigation Links ===== */
 const navLinks = [
     { label: "Home", href: "#home" },
+    { label: "Tentang", href: "#tentang" },
+    { label: "Flyer", href: "#flyer" },
     { label: "Katalog", href: "#katalog" },
     { label: "Cara Kerja", href: "#cara-kerja" },
 ];

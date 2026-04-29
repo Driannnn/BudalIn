@@ -15,7 +15,7 @@ const steps = [
         Icon: MessageCircle,
         step: "2",
         title: "Hubungi WiriGoo",
-        desc: "Kirim pesanan via WhatsApp — konfirmasi detail dan ongkir.",
+        desc: "Kirim pesanan via WhatsApp, konfirmasi detail dan ongkir.",
     },
     {
         Icon: PackageCheck,

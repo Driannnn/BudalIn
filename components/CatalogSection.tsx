@@ -55,7 +55,7 @@ const products: Product[] = [
         name: "Gorengan Pak De",
         price: "Rp 2.000/pcs",
         emoji: "🍩",
-        desc: "Tahu isi, risol, bakwan — anget-anget dari wajan!",
+        desc: "Tahu isi, risol, bakwan anget-anget dari wajan!",
         waText: "Halo WiriGoo, saya mau titip beli Gorengan Pak De",
     },
 ];

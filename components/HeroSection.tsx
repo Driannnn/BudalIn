@@ -134,8 +134,8 @@ export default function HeroSection() {
                         className="mt-12 flex flex-wrap gap-4 sm:gap-6"
                     >
                         {[
-                            { value: "50+", label: "Produk" },
-                            { value: "100+", label: "Pesanan" },
+                            { value: "5+", label: "Produk" },
+                            // { value: "100+", label: "Pesanan" },
                             { value: "4.9★", label: "Rating" },
                         ].map((stat) => (
                             <div
