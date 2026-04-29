@@ -78,7 +78,6 @@ export default function FlyerSection() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="mt-6 text-center text-sm text-brand-muted dark:text-white/40"
                     >
-                        Simpan atau bagikan flyer ini ke teman-temanmu! 🔥
                     </motion.p>
                 </motion.div>
             </div>
