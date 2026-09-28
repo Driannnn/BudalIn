@@ -13,7 +13,7 @@ const slides: Slide[] = [
     {
         type: "image",
         src: "/flyer.png",
-        alt: "Flyer WiriGoo — Promo dan Layanan",
+        alt: "Flyer BudalIn — Promo dan Layanan",
         badge: "📢 Flyer Terbaru",
     },
     {
@@ -102,7 +102,7 @@ export default function FlyerSection() {
                         </span>
                     </h2>
                     <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
-                        Geser slide untuk melihat info terbaru, promo, dan video promosi resmi WiriGoo.
+                        Geser slide untuk melihat info terbaru, promo, dan video promosi resmi BudalIn.
                     </p>
                 </motion.div>
 
@@ -250,8 +250,8 @@ export default function FlyerSection() {
                         className="mt-6 text-center text-sm text-brand-muted dark:text-white/40"
                     >
                         {slides[index].type === "image"
-                            ? "Flyer resmi WiriGoo"
-                            : "Tonton video promosi WiriGoo"}
+                            ? "Flyer resmi BudalIn"
+                            : "Tonton video promosi BudalIn"}
                     </motion.p>
                 </motion.div>
             </div>

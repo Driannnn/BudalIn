@@ -65,10 +65,10 @@ export default function AboutSection() {
                         Tentang Kami
                     </span>
                     <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy dark:text-white sm:text-4xl lg:text-5xl">
-                        Siapa <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">WiriGoo</span>?
+                        Siapa <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">BudalIn</span>?
                     </h2>
                     <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
-                        WiriGoo adalah layanan <strong>&ldquo;apapun semua berangkat&rdquo;</strong>{" "}
+                        BudalIn adalah layanan <strong>&ldquo;apapun semua berangkat&rdquo;</strong>{" "}
                         jasa personal asisten, titip beli dan pengantaran yang lahir dari semangat kewirausahaan
                         mahasiswa UNESA Kampus 5, Magetan.
                     </p>
@@ -110,11 +110,11 @@ export default function AboutSection() {
                     <h2 className="text-3xl font-black uppercase tracking-tight text-brand-navy dark:text-white sm:text-4xl lg:text-5xl">
                         Di Balik{" "}
                         <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">
-                            WiriGoo
+                            BudalIn
                         </span>
                     </h2>
                     <p className="mt-5 text-base leading-relaxed text-brand-navy-light/70 dark:text-white/50">
-                        Kenali orang-orang hebat di balik layanan WiriGoo yang siap melayani kebutuhanmu.
+                        Kenali orang-orang hebat di balik layanan BudalIn yang siap melayani kebutuhanmu.
                     </p>
                 </motion.div>
 

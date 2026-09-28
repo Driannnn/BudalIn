@@ -85,7 +85,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.7, delay: 0.25 }}
                         className="font-[var(--font-accent)] text-2x1 font-bold text-brand-navy-light/80 dark:text-white/60 sm:text-lg"
                     >
-                        &ldquo;Nggak Perlu Keluar, Biar WiriGoo yang Mengantar&rdquo;
+                        &ldquo;Nggak Perlu Keluar, Biar BudalIn yang Mengantar&rdquo;
                     </motion.p>
 
                     {/* Sub-headline */}
