@@ -51,9 +51,8 @@ export default function Navbar() {
                         height={40}
                         className="h-10 w-10 rounded-xl shadow-md transition-transform group-hover:scale-110"
                     />
-                    <span className="text-xl font-extrabold tracking-tight text-brand-navy dark:text-white">
-                        Wiri<span className="text-brand-orange">Goo</span>
-                    </span>
+                    <span>Budal</span>
+<span className="text-amber-500">In</span>
                 </a>
 
                 {/* ---------- Desktop Links ---------- */}

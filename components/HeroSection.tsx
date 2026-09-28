@@ -71,9 +71,9 @@ export default function HeroSection() {
                         className="mb-4"
                     >
                         <h1 className="text-[5rem] leading-none font-black tracking-tighter text-brand-navy dark:text-white sm:text-[8rem] md:text-[10rem] lg:text-[9rem] xl:text-[11rem]">
-                            Wiri
+                            Budal
                             <span className="bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent">
-                                Goo
+                                In
                             </span>
                         </h1>
                     </motion.div>
