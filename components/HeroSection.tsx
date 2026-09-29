@@ -59,7 +59,6 @@ export default function HeroSection() {
                         transition={{ duration: 0.6 }}
                         className="liquid-glass mb-6 inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold text-brand-orange"
                     >
-                        <Bike className="h-4 w-4" />
                         Personal Asisten - UNESA Kampus 5 Magetan
                     </motion.div>
 
@@ -99,7 +98,7 @@ export default function HeroSection() {
                         <strong className="text-brand-navy dark:text-white">jasa personal asisten, titip beli &amp; pengantaran</strong>{" "}
                         untuk mahasiswa dan warga di sekitar{" "}
                         <strong className="text-brand-navy dark:text-white">UNESA Kampus 5 Magetan</strong>.
-                        Apapun semua berangkat cukup pesan, kami yang jalan! 🏍️
+                        Apapun semua berangkat cukup pesan, kami yang jalan!
                     </motion.p>
 
                     {/* CTA Buttons */}
@@ -126,31 +125,7 @@ export default function HeroSection() {
                         </a>
                     </motion.div>
 
-                    {/* Stats */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 0.6 }}
-                        className="mt-12 flex flex-wrap gap-4 sm:gap-6"
-                    >
-                        {[
-                            { value: "5+", label: "Produk" },
-                            // { value: "100+", label: "Pesanan" },
-                            { value: "4.9★", label: "Rating" },
-                        ].map((stat) => (
-                            <div
-                                key={stat.label}
-                                className="liquid-glass-card rounded-2xl px-6 py-4 text-center"
-                            >
-                                <p className="text-2xl font-black text-brand-orange sm:text-3xl">
-                                    {stat.value}
-                                </p>
-                                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-muted dark:text-white/40 sm:text-sm">
-                                    {stat.label}
-                                </p>
-                            </div>
-                        ))}
-                    </motion.div>
+                  
                 </div>
 
                 {/* ----- RIGHT: Mascot Image ----- */}
